@@ -19,7 +19,7 @@ public class MO_EJ_10 {
     public static void main(String[] args) {
         Scanner leer=new Scanner(System.in);
         int num;
-        for (int i = 0; i==3; i++) {
+        for (int i = 0; i<=3; i++) {
             System.out.println("Ingrese un numero entre 1 y 20");
             num=leer.nextInt();
             while (num<1 || num>20){
@@ -27,10 +27,11 @@ public class MO_EJ_10 {
                 System.out.println("Intente nuevamente:");
                 num=leer.nextInt();
             }
-            String aster="";
-            for (int j = 0; j == (num-1); j++) {
-                System.out.println(aster+"*");
+            System.out.print(num+" ");
+            for (int j = 0; j <= (num-1); j++) {
+                System.out.print("*");
             }
+            System.out.println("");
         }
     }
 }
